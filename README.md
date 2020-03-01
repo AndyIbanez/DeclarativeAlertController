@@ -1,6 +1,6 @@
 # DeclarativeAlertController
 
-`DeclarativeAlertController` makes provides a declarative interface and makes it easier and faster to create `UIAlertController`s in iOS.
+`DeclarativeAlertController` provides a declarative interface and makes it easier and faster to create `UIAlertController`s in iOS.
 
 Instead of writing code like this:
 
@@ -59,3 +59,13 @@ present(alert.alertController, animated: true)
 ```
 
 Making your `UIAlertController` code easier and faster to write, and easier to undestand.
+
+## API Usage
+
+To declare an AlertController, use the `AlertController(title:message:style:content)` constructor. `title` and `message` may be left nil and take strings. You must specify the style, which are the same as standard `UIAlertController`s: `.actionSheet` or `alert`.
+
+The `content` parameter takes in the function builder where you specify a variable amount of `AlertAction`s you want to pass. Each `AlertAction` must take at least one title (which can be `DefaultTitle`, `CancelTitle`, or `DestructiveTitle`) and an `ActionHandler` which takes a closure to execute when that action is tapped. The constructor for this object takes an optional closure, so if you don't need to do anything specific, you just need to call it without passing a closure.
+
+#### Usage Notes
+
+This was build for UIKit. While the syntax is similar to SwiftUI, this is not compatible with SwiftUI at all.
