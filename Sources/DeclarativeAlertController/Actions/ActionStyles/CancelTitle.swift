@@ -9,10 +9,10 @@ import Foundation
 import UIKit
 
 public struct CancelTitle: AlertActionStyleProtocol {
-    let title: String
-    let style: UIAlertAction.Style
+    public let title: String
+    public let style: UIAlertAction.Style
     
-    init(_ title: String) {
+    public init(_ title: String) {
         self.title = title
         self.style = .cancel
     }

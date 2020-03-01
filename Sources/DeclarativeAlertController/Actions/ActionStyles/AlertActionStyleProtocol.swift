@@ -12,13 +12,3 @@ public protocol AlertActionStyleProtocol {
     var title: String { get }
     var style: UIAlertAction.Style { get }
 }
-
-public struct DefaultTitle: AlertActionStyleProtocol {
-    let title: String
-    let style: UIAlertAction.Style
-    
-    init(_ title: String) {
-        self.title = title
-        self.style = .default
-    }
-}

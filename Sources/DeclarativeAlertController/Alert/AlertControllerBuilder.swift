@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 @_functionBuilder
-public struct Alert {
+public struct AlertControllerBuilder {
     public static func buildBlock(_ actions: AlertAction...) -> [UIAlertAction] {
         return actions.map { $0.alertAction }
     }
