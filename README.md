@@ -69,3 +69,11 @@ The `content` parameter takes in the function builder where you specify a variab
 #### Usage Notes
 
 This was build for UIKit. While the syntax is similar to SwiftUI, this is not compatible with SwiftUI at all.
+
+#### Installation
+
+This is a Swift package. To add it to your project, use the following URL:
+
+```
+https://github.com/AndyIbanez/DeclarativeAlertController.git
+```

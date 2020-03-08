@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 public class AlertController {
-    let alertController: UIAlertController
+    public let alertController: UIAlertController
     
     public init
         (
